@@ -1,0 +1,181 @@
+Waf: Entering directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.486s)
+5
+
+
+
+ ######################## Final Conclusion ########################
+
+  All Sent Packets: 97                  
+  All Received Packets: 72
+  All Lost Packets: 25                
+  All Drop Packets: 0
+  Packet Drop Ratio: 0% 
+  Packets Delivery Ratio: 74%  Average END-TO-END delay: 9.25784
+  Throughput :13.7847
+Recvd Pckts : 3
+ Waf: Entering directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.508s)
+10
+
+
+
+ ######################## Final Conclusion ########################
+
+  All Sent Packets: 93                  
+  All Received Packets: 70
+  All Lost Packets: 23                
+  All Drop Packets: 0
+  Packet Drop Ratio: 0% 
+  Packets Delivery Ratio: 75%  Average END-TO-END delay: 7.38419
+  Throughput :13.8758
+Recvd Pckts : 8
+ Waf: Entering directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.514s)
+15
+
+
+
+ ######################## Final Conclusion ########################
+
+  All Sent Packets: 81                  
+  All Received Packets: 58
+  All Lost Packets: 23                
+  All Drop Packets: 0
+  Packet Drop Ratio: 0% 
+  Packets Delivery Ratio: 71%  Average END-TO-END delay: 6.32816
+  Throughput :18.9012
+Recvd Pckts : 13
+ Waf: Entering directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.479s)
+20
+
+
+
+ ######################## Final Conclusion ########################
+
+  All Sent Packets: 124                  
+  All Received Packets: 101
+  All Lost Packets: 23                
+  All Drop Packets: 0
+  Packet Drop Ratio: 0% 
+  Packets Delivery Ratio: 81%  Average END-TO-END delay: 9.66555
+  Throughput :14.3193
+Recvd Pckts : 18
+ Waf: Entering directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.477s)
+25
+
+
+
+ ######################## Final Conclusion ########################
+
+  All Sent Packets: 87                  
+  All Received Packets: 64
+  All Lost Packets: 23                
+  All Drop Packets: 0
+  Packet Drop Ratio: 0% 
+  Packets Delivery Ratio: 73%  Average END-TO-END delay: 6.70039
+  Throughput :18.6136
+Recvd Pckts : 23
+ Waf: Entering directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.467s)
+30
+
+
+
+ ######################## Final Conclusion ########################
+
+  All Sent Packets: 92                  
+  All Received Packets: 69
+  All Lost Packets: 23                
+  All Drop Packets: 0
+  Packet Drop Ratio: 0% 
+  Packets Delivery Ratio: 75%  Average END-TO-END delay: 6.93888
+  Throughput :20.6791
+Recvd Pckts : 28
+ Waf: Entering directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.479s)
+35
+
+
+
+ ######################## Final Conclusion ########################
+
+  All Sent Packets: 106                  
+  All Received Packets: 83
+  All Lost Packets: 23                
+  All Drop Packets: 0
+  Packet Drop Ratio: 0% 
+  Packets Delivery Ratio: 78%  Average END-TO-END delay: 7.41006
+  Throughput :19.2686
+Recvd Pckts : 33
+ Waf: Entering directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.472s)
+40
+
+
+
+ ######################## Final Conclusion ########################
+
+  All Sent Packets: 166                  
+  All Received Packets: 143
+  All Lost Packets: 23                
+  All Drop Packets: 0
+  Packet Drop Ratio: 0% 
+  Packets Delivery Ratio: 86%  Average END-TO-END delay: 11.3583
+  Throughput :13.8868
+Recvd Pckts : 38
+ Waf: Entering directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.513s)
+45
+
+
+
+ ######################## Final Conclusion ########################
+
+  All Sent Packets: 107                  
+  All Received Packets: 84
+  All Lost Packets: 23                
+  All Drop Packets: 0
+  Packet Drop Ratio: 0% 
+  Packets Delivery Ratio: 78%  Average END-TO-END delay: 7.6058
+  Throughput :20.8395
+Recvd Pckts : 43
+ Waf: Entering directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Waf: Leaving directory `/home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.493s)
+50
+
+
+
+ ######################## Final Conclusion ########################
+
+  All Sent Packets: 137                  
+  All Received Packets: 114
+  All Lost Packets: 23                
+  All Drop Packets: 0
+  Packet Drop Ratio: 0% 
+  Packets Delivery Ratio: 83%  Average END-TO-END delay: 10.0423
+  Throughput :15.2703
+Recvd Pckts : 48
+ 
