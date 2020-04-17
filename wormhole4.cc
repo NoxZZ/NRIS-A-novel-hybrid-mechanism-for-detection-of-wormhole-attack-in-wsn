@@ -34,8 +34,8 @@ int main (int argc, char *argv[])
   bool enableFlowMonitor = false;
   bool AttackStat = false;
 int pcktCnt = 50;
-  int maxLimit = 100;
-  int stepCount = 5;
+  int maxLimit = 10000;
+  int stepCount = 100;
   std::string phyMode ("DsssRate1Mbps");
   int SuspNode1 = 0;
   int SuspNode2 = 0;
@@ -54,7 +54,7 @@ int pcktCnt = 50;
 
 
 
-  int loopLimit = maxLimit/stepCount;
+  int loopLimit = (maxLimit-pcktCnt)/stepCount;
   //std::cout<<pcktCnt<<"\n";
 
 
@@ -227,7 +227,7 @@ int cords[] = {0,550,200,500,400,500,600,550,200,600,400,600};
   //std::cout<<"Accumulating results...\n";
   //std::cout<<"Generating result matrix...\n";
 
-  for (int i = 0; i < loopLimit; ++i)
+  for (int i = 0; i <= loopLimit; ++i)
   {
     /* code */
 

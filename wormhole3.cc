@@ -19,7 +19,7 @@ NS_LOG_COMPONENT_DEFINE ("Wormhole");
 
 using namespace ns3;
 int cnt=0;
-double resultMatrix[4][200];
+double resultMatrix[4][1000];
 
 void
 ReceivePacket(Ptr<const Packet> p, const Address & addr)
@@ -33,9 +33,9 @@ int main (int argc, char *argv[])
 {
   bool enableFlowMonitor = false;
   bool AttackStat = false;
-  int pcktCnt = 0;
+  int pcktCnt = 50;
   int maxLimit = 500;
-  int stepCount = 50;
+  int stepCount = 100;
   std::string phyMode ("DsssRate1Mbps");
 
   CommandLine cmd;
@@ -43,8 +43,8 @@ int main (int argc, char *argv[])
   cmd.AddValue ("phyMode", "Wifi Phy mode", phyMode);
   cmd.AddValue ("AttackStat","Wormhole attack enabled or disabled",AttackStat);
   cmd.AddValue ("pcktCnt","number of packets to be sent during each simulation",pcktCnt);
-  //cmd.AddValue ("maxLimit","Max Limit for packet analysis",maxLimit);
-  //cmd.AddValue ("stepCount","Step count for regular incrementation",stepCount);
+  cmd.AddValue ("maxLimit","Max Limit for packet analysis",maxLimit);
+  cmd.AddValue ("stepCount","Step count for regular incrementation",stepCount);
   cmd.Parse (argc, argv);
 
 
@@ -203,7 +203,7 @@ int main (int argc, char *argv[])
   std::cout<<"Accumulating results...\n";
   std::cout<<"Generating result matrix...\n";
 
-  for (int i = 0; i < loopLimit; ++i)
+  for (int i = 0; i <= loopLimit; ++i)
   {
     std::cout<<pcktCnt;
     /* code */
@@ -298,7 +298,7 @@ Simulator::Stop();
   resultMatrix[1][i] = (avg/count);
   resultMatrix[2][i] = ((rxPacketsum * 100) /txPacketsum);
   resultMatrix[3][i] = ((Delaysum / txPacketsum) / rxPacketsum) * 1000000;
-  pcktCnt+=5;
+  pcktCnt+=stepCount;
   }
 
   std::cout<<"Result matrix Generated!!\n";
@@ -311,7 +311,7 @@ Simulator::Stop();
     else if(i==1){fout<<"Average Throughput (in Kbps)";}
     else if(i==2){fout<<"Packet Delivery Ratio (in %)";}
     else if(i==3){fout<<"Average E2E Delay (in ms)";}
-    for (int j = 0; j < loopLimit; ++j)
+    for (int j = 0; j <= loopLimit; ++j)
     {
       fout<<"\t"<<resultMatrix[i][j];
     }
