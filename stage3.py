@@ -78,15 +78,15 @@ def plot_graph(x,y1,y2,y3,y4,y5,y6):
         fin_list = []
         suspNodefin=[]
         for elem in tups:
-            cmd = 'cd /home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1 && ./waf --run "scratch/wormhole4 --SuspNode1='+str(elem[0])+' --SuspNode2='+str(elem[1])+' --pcktCnt=50"'
+            cmd = 'cd /home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1 && ./waf --run "scratch/wormhole4 --SuspNode1='+str(elem[0])+' --SuspNode2='+str(elem[1])+' --pcktCnt='+str(x[0])+'"'
             outputBeforeAttack = os.popen(cmd).readlines()
-            cmd = 'cd /home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1 && ./waf --run "scratch/wormhole4 --SuspNode1='+str(elem[0])+' --SuspNode2='+str(elem[1])+' --pcktCnt=50 --AttackStat=true"'
+            cmd = 'cd /home/noxz/BE_project/ns-allinone-3.30.1/ns-3.30.1 && ./waf --run "scratch/wormhole4 --SuspNode1='+str(elem[0])+' --SuspNode2='+str(elem[1])+' --pcktCnt='+str(x[0])+' --AttackStat=true"'
             outputAfterAttack = os.popen(cmd).readlines()
             if(checkWormholeLink(outputBeforeAttack[-1], outputAfterAttack[-1])!=None):
                 suspNodefin.append(elem)
                 fin_list.append(checkWormholeLink(outputBeforeAttack[-1], outputAfterAttack[-1]))
-        print(fin_list)
-        print(suspNodefin)
+        #print('the final list is --',fin_list)
+        #print('the susp node fin is --',suspNodefin)
         finalCheck(fin_list,suspNodefin,Suspicious_node_set)
 
 
@@ -133,8 +133,9 @@ def checkWormholeLink(output1, output2):
         dif3 = abs(list1[2]-list2[2])
         if(list1[1]==0.0 and list1[2]==0.0):
             print('Error : no alternate link between source and destination found..')
-            #print(list1,list2)    
+            print(list1,list2)    
         else:
+            print('Alternate link found successfully! parameters info ---',list1,list2)
             return([dif1,dif2,dif3])
 #FUNCTION FOR CHECKING MALICIOUS LINK BETWEEN FINAL NODE PAIR
 def finalCheck(a,b,c):
@@ -146,11 +147,12 @@ def finalCheck(a,b,c):
         temp1.append(e[0])
         temp2.append(e[1])
         temp3.append(e[2])
+    print(temp1,temp2,temp3)
     val1 = temp1.index(max(temp1))
     val2 = temp2.index(max(temp2))
     val3 = temp3.index(max(temp3))
-    #print(val1,val2,val3)
-    if(val1==val2==val3):
+    print(val1,val2,val3)
+    if(val1==val3):
         temp4 = [x for x in c if x not in b[val1]]
     else:
         print('working on this condition')
