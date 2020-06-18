@@ -69,7 +69,7 @@ def plot_graph(x,y1,y2,y3,y4,y5,y6):
     #CHECK ATTACK PRESENCE RETURNS TRUE IF NETWORK SHOWS MALICIOUS BEHAVIOUR
     val = checkAttackPresence(y1,y2,y3,y4,y5,y6)
     
-    #IF STAGE 1 RETURNS TRUE.... STAGE 3 STARTS FROM HERE...
+    #IF STAGE 1 RETURNS TRUE.... STAGE 2 STARTS FROM HERE...
     if(val==True):
         #Suspicious_node_set = [2,3,5,6]
         #print("Entering stage 3")
